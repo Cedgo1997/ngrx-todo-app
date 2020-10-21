@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 
 import { TodoModule } from 'src/app/todos/todo.module';
@@ -16,6 +18,7 @@ import { todoReducer } from './todos/todo.reducer';
     BrowserModule,
     TodoModule,
     StoreModule.forRoot({ todos: todoReducer }),
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
