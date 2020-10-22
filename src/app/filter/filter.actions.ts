@@ -1,7 +1,6 @@
 import { createAction, props } from '@ngrx/store';
-import { type } from 'os';
 
-export type validFilters = 'all' | 'pendings' | 'completed';
+export type validFilters = 'all' | 'pending' | 'completed';
 
 export const setFilter = createAction(
   '[Filter] Set Filter',

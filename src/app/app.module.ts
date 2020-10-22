@@ -11,13 +11,14 @@ import { FooterComponent } from './footer/footer.component';
 // Ngrx
 import { StoreModule } from '@ngrx/store';
 import { todoReducer } from './todos/todo.reducer';
+import { appReducers } from './app.reducer';
 
 @NgModule({
   declarations: [AppComponent, FooterComponent],
   imports: [
     BrowserModule,
     TodoModule,
-    StoreModule.forRoot({ todos: todoReducer }),
+    StoreModule.forRoot(appReducers),
     ReactiveFormsModule,
   ],
   providers: [],
