@@ -4,7 +4,7 @@
 
     <label (dblclick)="edit()"> {{ todo.text }} </label>
 
-    <button class="destroy"></button>
+    <button class="destroy" (click)="erase()" ></button>
   </div>
 
   <input
