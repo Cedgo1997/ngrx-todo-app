@@ -5,7 +5,7 @@ export class Todo {
 
   constructor(text: string) {
     this.text = text;
-    this.id = new Date().getTime();
+    this.id = Math.random()*10;
     this.completed = false;
   }
 }
