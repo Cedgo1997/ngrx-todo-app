@@ -7,4 +7,8 @@ export const edit = createAction(
   props<{ text: string; id: number }>()
 );
 export const erase = createAction('[TODO] Delete', props<{ id: number }>());
-export const checkAll = createAction('[TODO] Check All', props<{ completed: boolean }>());
+export const checkAll = createAction(
+  '[TODO] Check All',
+  props<{ completed: boolean }>()
+);
+export const eraseAll = createAction('[TODO] Erase All');

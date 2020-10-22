@@ -10,7 +10,6 @@ import { FooterComponent } from './footer/footer.component';
 
 // Ngrx
 import { StoreModule } from '@ngrx/store';
-import { todoReducer } from './todos/todo.reducer';
 import { appReducers } from './app.reducer';
 
 @NgModule({
